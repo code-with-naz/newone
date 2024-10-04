@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({ extended: false }))
 //enable CORS -> Cross Origine Resource Sharing -> communication among various ports
 app.use(cors())
 //connect to mongodb
-mongoose.connect(url, { dbName: "newDb" })
+mongoose.connect(url, { dbName: "myDb" })
     .then(() => {
         console.log('Connection Sucess')
     }, (errRes) => {
